@@ -1,0 +1,415 @@
+Tiles: {
+	PrakMusicBoxTile.MapEntry: Prak Music Box Tile
+	LivingBreweryTile.MapEntry: Living Brewery Tile
+	DemoniteBreweryTile.MapEntry: Demonite Brewery Tile
+	CrimtaneBreweryTile.MapEntry: Crimtane Brewery Tile
+}
+
+Buffs: {
+	AquaticAbility: {
+		DisplayName: Aquatic Ability
+		Description: Mods.DjamUtility.Buffs.AquaticAbility.Description
+	}
+
+	WonderfulArcana: {
+		Description: Mods.DjamUtility.Buffs.WonderfulArcana.Description
+		DisplayName: Wonderful Arcana
+	}
+
+	UndergroundImmersion: {
+		Description: Mods.DjamUtility.Buffs.UndergroundImmersion.Description
+		DisplayName: Underground Immersion
+	}
+
+	SuperLucky: {
+		Description: Mods.DjamUtility.Buffs.SuperLucky.Description
+		DisplayName: Super Lucky
+	}
+
+	SummonersFocus: {
+		Description: Mods.DjamUtility.Buffs.SummonersFocus.Description
+		DisplayName: Summoners Focus
+	}
+
+	RangersProficiency: {
+		Description: Mods.DjamUtility.Buffs.RangersProficiency.Description
+		DisplayName: Rangers Proficiency
+	}
+
+	PotentBait: {
+		Description: Mods.DjamUtility.Buffs.PotentBait.Description
+		DisplayName: Potent Bait
+	}
+
+	PerfectVision: {
+		Description: Mods.DjamUtility.Buffs.PerfectVision.Description
+		DisplayName: Perfect Vision
+	}
+
+	LovelyStench: {
+		Description: Mods.DjamUtility.Buffs.LovelyStench.Description
+		DisplayName: Lovely Stench
+	}
+
+	LocationInstability: {
+		Description: Mods.DjamUtility.Buffs.LocationInstability.Description
+		DisplayName: Location Instability
+	}
+
+	LifeSupport: {
+		Description: Mods.DjamUtility.Buffs.LifeSupport.Description
+		DisplayName: Life Support
+	}
+
+	HeavilyProtected: {
+		Description: Mods.DjamUtility.Buffs.HeavilyProtected.Description
+		DisplayName: Heavily Protected
+	}
+
+	FieryInheritance: {
+		Description: Mods.DjamUtility.Buffs.FieryInheritance.Description
+		DisplayName: Fiery Inheritance
+	}
+
+	BlessingOfVitality: {
+		Description: Mods.DjamUtility.Buffs.BlessingOfVitality.Description
+		DisplayName: Blessing Of Vitality
+	}
+
+	BlessingOfUtility: {
+		Description: Mods.DjamUtility.Buffs.BlessingOfUtility.Description
+		DisplayName: Blessing Of Utility
+	}
+
+	BlessingOfPieselopadaka: {
+		Description: Mods.DjamUtility.Buffs.BlessingOfPieselopadaka.Description
+		DisplayName: Blessing Of Pieselopadaka
+	}
+
+	BlessingOfDestruction: {
+		Description: Mods.DjamUtility.Buffs.BlessingOfDestruction.Description
+		DisplayName: Blessing Of Destruction
+	}
+
+	Berserk: {
+		Description: Mods.DjamUtility.Buffs.Berserk.Description
+		DisplayName: Berserk
+	}
+}
+
+Items: {
+	PrakMusicBox: {
+		Tooltip: ""
+		DisplayName: Prak Music Box
+	}
+
+	LivingBrewery: {
+		Tooltip: ""
+		DisplayName: Living Brewery
+	}
+
+	DemoniteBrewery: {
+		Tooltip: ""
+		DisplayName: Demonite Brewery
+	}
+
+	CrimtaneBrewery: {
+		Tooltip: ""
+		DisplayName: Crimtane Brewery
+	}
+
+	SingularityOfPieselopadaka: {
+		Tooltip: ""
+		DisplayName: Singularity Of Pieselopadaka
+	}
+
+	ShardOfVitality: {
+		Tooltip: ""
+		DisplayName: Shard Of Vitality
+	}
+
+	ShardOfUtility: {
+		Tooltip: ""
+		DisplayName: Shard Of Utility
+	}
+
+	ShardOfDestruction: {
+		Tooltip: ""
+		DisplayName: Shard Of Destruction
+	}
+
+	SummonersCatalyst: {
+		Tooltip: ""
+		DisplayName: Summoners Catalyst
+	}
+
+	RangersGlove: {
+		Tooltip: ""
+		DisplayName: Rangers Glove
+	}
+
+	PortableLifeSupport: {
+		Tooltip: ""
+		DisplayName: Portable Life Support
+	}
+
+	MuskyPerfumes: {
+		Tooltip: ""
+		DisplayName: Musky Perfumes
+	}
+
+	LocationWarper: {
+		Tooltip: ""
+		DisplayName: Location Warper
+	}
+
+	IronboundBracelet: {
+		Tooltip: ""
+		DisplayName: Ironbound Bracelet
+	}
+
+	HellishCharm: {
+		Tooltip: ""
+		DisplayName: Hellish Charm
+	}
+
+	HandheldDrill: {
+		Tooltip: ""
+		DisplayName: Handheld Drill
+	}
+
+	FourLeafClover: {
+		Tooltip: ""
+		DisplayName: Four Leaf Clover
+	}
+
+	FishermansScanner: {
+		Tooltip: ""
+		DisplayName: Fishermans Scanner
+	}
+
+	DjamsGlasses: {
+		Tooltip: ""
+		DisplayName: Djams Glasses
+	}
+
+	BerserkersCirclet: {
+		Tooltip: ""
+		DisplayName: Berserkers Circlet
+	}
+
+	ArcaneFocus: {
+		Tooltip: ""
+		DisplayName: Arcane Focus
+	}
+
+	AquaticCharm: {
+		Tooltip: ""
+		DisplayName: Aquatic Charm
+	}
+
+	SuperiorBandOfManaRegeneration: {
+		Tooltip: ""
+		DisplayName: Superior Band Of Mana Regeneration
+	}
+
+	RingOfLove: {
+		Tooltip: ""
+		DisplayName: Ring Of Love
+	}
+
+	PendantOfCalming: {
+		Tooltip: ""
+		DisplayName: Pendant Of Calming
+	}
+
+	PendantOfBattle: {
+		Tooltip: ""
+		DisplayName: Pendant Of Battle
+	}
+
+	NecklaceOfWarmth: {
+		Tooltip: ""
+		DisplayName: Necklace Of Warmth
+	}
+
+	NecklaceOfTitans: {
+		Tooltip: ""
+		DisplayName: Necklace Of Titans
+	}
+
+	NecklaceOfSummoning: {
+		Tooltip: ""
+		DisplayName: Necklace Of Summoning
+	}
+
+	NecklaceOfRegeneration: {
+		Tooltip: ""
+		DisplayName: Necklace Of Regeneration
+	}
+
+	NecklaceOfObsidianSkin: {
+		Tooltip: ""
+		DisplayName: Necklace Of Obsidian Skin
+	}
+
+	NecklaceOfLifeforce: {
+		Tooltip: ""
+		DisplayName: Necklace Of Lifeforce
+	}
+
+	NecklaceOfIronskin: {
+		Tooltip: ""
+		DisplayName: Necklace Of Ironskin
+	}
+
+	NecklaceOfHeartreach: {
+		Tooltip: ""
+		DisplayName: Necklace Of Heartreach
+	}
+
+	NecklaceOfEndurance: {
+		Tooltip: ""
+		DisplayName: Necklace Of Endurance
+	}
+
+	MonocleOfSpelunking: {
+		Tooltip: ""
+		DisplayName: Monocle Of Spelunking
+	}
+
+	HuntersCloak: {
+		Tooltip: ""
+		DisplayName: Hunters Cloak
+	}
+
+	HopekScent: {
+		Tooltip: ""
+		DisplayName: Hopek Scent
+	}
+
+	GogglesOfBuilding: {
+		Tooltip: ""
+		DisplayName: Goggles Of Building
+	}
+
+	GauntletOfWrath: {
+		Tooltip: ""
+		DisplayName: Gauntlet Of Wrath
+	}
+
+	GauntletOfRage: {
+		Tooltip: ""
+		DisplayName: Gauntlet Of Rage
+	}
+
+	GauntletOfAmmoReservation: {
+		Tooltip: ""
+		DisplayName: Gauntlet Of Ammo Reservation
+	}
+
+	EarringOfSonarVision: {
+		Tooltip: ""
+		DisplayName: Earring Of Sonar Vision
+	}
+
+	EarringOfFishing: {
+		Tooltip: ""
+		DisplayName: Earring Of Fishing
+	}
+
+	EarringOfCrates: {
+		Tooltip: ""
+		DisplayName: Earring Of Crates
+	}
+
+	RulesCard: {
+		Tooltip: ""
+		DisplayName: Rules Card
+	}
+
+	MysteriousTech: {
+		Tooltip: ""
+		DisplayName: Mysterious Tech
+	}
+
+	CrownOfThorns: {
+		Tooltip: ""
+		DisplayName: Crown Of Thorns
+	}
+
+	CloakOfInvisibility: {
+		Tooltip: ""
+		DisplayName: Cloak Of Invisibility
+	}
+
+	BandOfSwiftness: {
+		Tooltip: ""
+		DisplayName: Band Of Swiftness
+	}
+
+	BandOfShining: {
+		Tooltip: ""
+		DisplayName: Band Of Shining
+	}
+
+	BandOfNightOwl: {
+		Tooltip: ""
+		DisplayName: Band Of Night Owl
+	}
+
+	BandOfMining: {
+		Tooltip: ""
+		DisplayName: Band Of Mining
+	}
+
+	BandOfMagicPower: {
+		Tooltip: ""
+		DisplayName: Band Of Magic Power
+	}
+
+	BandOfInferno: {
+		Tooltip: ""
+		DisplayName: Band Of Inferno
+	}
+
+	BandOfGravityControl: {
+		Tooltip: ""
+		DisplayName: Band Of Gravity Control
+	}
+
+	BandOfDangersense: {
+		Tooltip: ""
+		DisplayName: Band Of Dangersense
+	}
+
+	ArcheryGlove: {
+		Tooltip: ""
+		DisplayName: Archery Glove
+	}
+
+	AnkletOfWaterWalking: {
+		Tooltip: ""
+		DisplayName: Anklet Of Water Walking
+	}
+
+	AnkletOfGills: {
+		Tooltip: ""
+		DisplayName: Anklet Of Gills
+	}
+
+	AnkletOfFlippers: {
+		Tooltip: ""
+		DisplayName: Anklet Of Flippers
+	}
+
+	AnkletOfFeatherfall: {
+		Tooltip: ""
+		DisplayName: Anklet Of Featherfall
+	}
+
+	AmuletOfGreaterLuck: {
+		Tooltip: ""
+		DisplayName: Amulet Of Greater Luck
+	}
+}
