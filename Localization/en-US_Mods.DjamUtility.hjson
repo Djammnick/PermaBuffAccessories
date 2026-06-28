@@ -8,7 +8,7 @@ Tiles: {
 Buffs: {
 	AquaticAbility: {
 		DisplayName: Aquatic Ability
-		Description: Mods.DjamUtility.Buffs.AquaticAbility.Description
+		Description: Improved mobility in water.
 	}
 
 	WonderfulArcana: {

@@ -1,17 +1,17 @@
-using DjamUtility.Content.Buffs;
+using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
 
-namespace DjamUtility.Content.Items.Accessories.TierII;
+namespace DjamUtility.Content.Items.Accessories.TierI;
 
-public class BerserkersCirclet : ModItem
+[AutoloadEquip(/*Could not decode attribute arguments.*/)]
+public class HuntersCloak : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Berserker's Circlet");
-        // ((ModItem)this).Tooltip.SetDefault("Grants great attack power, crit chance, knockback and thorns effect.\n'Give in to the fury.'");
+        // ((ModItem)this).DisplayName.SetDefault("Hunter's Cloak");
+        // ((ModItem)this).Tooltip.SetDefault("Applies the Hunter buff that lasts until taken off.\n'I'm sure nobody will see you in that red color...'");
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
     }
 
@@ -24,22 +24,23 @@ public class BerserkersCirclet : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = 2;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
+        ((ModItem)this).Item.vanity = true;
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(ModContent.BuffType<Berserk>(), 10, true, false);
+        player.AddBuff(17, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient<GauntletOfRage>(1).AddIngredient<GauntletOfWrath>(1)
-            .AddIngredient<NecklaceOfTitans>(1)
-            .AddIngredient<CrownOfThorns>(1)
-            .AddIngredient(158, 1)
-            .AddTile(355)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(304, 5).AddIngredient(225, 15)
+            .AddTile<DemoniteBreweryTile>()
+            .Register();
+        ((ModItem)this).CreateRecipe(1).AddIngredient(304, 5).AddIngredient(225, 15)
+            .AddTile<CrimtaneBreweryTile>()
             .Register();
     }
 }

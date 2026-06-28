@@ -1,6 +1,7 @@
 using DjamUtility.Content.Buffs;
 using Terraria;
 using Terraria.GameContent.Creative;
+using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;

@@ -1,4 +1,6 @@
+using System.Text;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Buffs;
@@ -7,8 +9,6 @@ public class AquaticAbility : ModBuff
 {
     public override void SetStaticDefaults()
     {
-        // ((ModBuff)this).DisplayName.SetDefault("Aquatic Ability");
-        // ((ModBuff)this).Description.SetDefault("Mastery of the waters.");
     }
 
     public override void Update(Player player, ref int buffIndex)
@@ -16,8 +16,8 @@ public class AquaticAbility : ModBuff
         player.waterWalk = true;
         player.gills = true;
         player.accFlipper = true;
-        player.buffImmune[4] = true;
-        player.buffImmune[15] = true;
-        player.buffImmune[109] = true;
+        player.buffImmune[BuffID.Gills] = true;
+        player.buffImmune[BuffID.WaterWalking] = true;
+        player.buffImmune[BuffID.Flipper] = true;
     }
 }

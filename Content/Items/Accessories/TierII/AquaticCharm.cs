@@ -1,6 +1,7 @@
 using DjamUtility.Content.Buffs;
 using Terraria;
 using Terraria.GameContent.Creative;
+using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
@@ -9,6 +10,7 @@ public class AquaticCharm : ModItem
 {
     public override void SetStaticDefaults()
     {
+        
         // ((ModItem)this).DisplayName.SetDefault("Aquatic Charm");
         // ((ModItem)this).Tooltip.SetDefault("Grants greater mobility in water.\n'Like flying, but in water.'");
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
