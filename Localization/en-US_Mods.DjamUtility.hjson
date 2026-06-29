@@ -12,139 +12,155 @@ Buffs: {
 	}
 
 	WonderfulArcana: {
-		Description: Mods.DjamUtility.Buffs.WonderfulArcana.Description
 		DisplayName: Wonderful Arcana
+		Description: Magic flows through you.
 	}
 
 	UndergroundImmersion: {
-		Description: Mods.DjamUtility.Buffs.UndergroundImmersion.Description
 		DisplayName: Underground Immersion
+		Description: The Caverns are your home.
 	}
 
 	SuperLucky: {
-		Description: Mods.DjamUtility.Buffs.SuperLucky.Description
 		DisplayName: Super Lucky
+		Description: You are blessed with immense luck.
 	}
 
 	SummonersFocus: {
-		Description: Mods.DjamUtility.Buffs.SummonersFocus.Description
 		DisplayName: Summoners Focus
+		Description: You are filled with the power of companionship.
 	}
 
 	RangersProficiency: {
-		Description: Mods.DjamUtility.Buffs.RangersProficiency.Description
 		DisplayName: Rangers Proficiency
+		Description: A sharpshooter's blessing improves your shot.
 	}
 
 	PotentBait: {
-		Description: Mods.DjamUtility.Buffs.PotentBait.Description
 		DisplayName: Potent Bait
+		Description: Your reels are more potent than ever.
 	}
 
 	PerfectVision: {
-		Description: Mods.DjamUtility.Buffs.PerfectVision.Description
 		DisplayName: Perfect Vision
+		Description: Your vision becomes stronger.
 	}
 
 	LovelyStench: {
-		Description: Mods.DjamUtility.Buffs.LovelyStench.Description
 		DisplayName: Lovely Stench
+		Description: The smell is indescribable.
 	}
 
 	LocationInstability: {
-		Description: Mods.DjamUtility.Buffs.LocationInstability.Description
 		DisplayName: Location Instability
+		Description: Your presence is unstable.
 	}
 
 	LifeSupport: {
-		Description: Mods.DjamUtility.Buffs.LifeSupport.Description
 		DisplayName: Life Support
+		Description: A pure protection.
 	}
 
 	HeavilyProtected: {
-		Description: Mods.DjamUtility.Buffs.HeavilyProtected.Description
 		DisplayName: Heavily Protected
+		Description: Your armor toughens.
 	}
 
 	FieryInheritance: {
-		Description: Mods.DjamUtility.Buffs.FieryInheritance.Description
 		DisplayName: Fiery Inheritance
+		Description: Flames dance around you.
 	}
 
 	BlessingOfVitality: {
-		Description: Mods.DjamUtility.Buffs.BlessingOfVitality.Description
 		DisplayName: Blessing Of Vitality
+		Description: Your heartbeat quickens. Your life lasts a moment longer.
 	}
 
 	BlessingOfUtility: {
-		Description: Mods.DjamUtility.Buffs.BlessingOfUtility.Description
 		DisplayName: Blessing Of Utility
+		Description: You are the catalyst of creation.
 	}
 
 	BlessingOfPieselopadaka: {
-		Description: Mods.DjamUtility.Buffs.BlessingOfPieselopadaka.Description
 		DisplayName: Blessing Of Pieselopadaka
+		Description: The world is at your command.
 	}
 
 	BlessingOfDestruction: {
-		Description: Mods.DjamUtility.Buffs.BlessingOfDestruction.Description
 		DisplayName: Blessing Of Destruction
+		Description: Nothing will stand in your way.
 	}
 
 	Berserk: {
-		Description: Mods.DjamUtility.Buffs.Berserk.Description
 		DisplayName: Berserk
+		Description: Your blood boils in fury.
 	}
 }
 
 Items: {
 	PrakMusicBox: {
-		Tooltip: ""
+		Tooltip: A blessed tune.
 		DisplayName: Prak Music Box
 	}
 
 	LivingBrewery: {
-		Tooltip: ""
+		Tooltip: Used to fuse many powerful forces into one.
 		DisplayName: Living Brewery
 	}
 
 	DemoniteBrewery: {
-		Tooltip: ""
+		Tooltip: Used to craft accessories with permanent buff effects.
 		DisplayName: Demonite Brewery
 	}
 
 	CrimtaneBrewery: {
-		Tooltip: ""
+		Tooltip: Used to craft accessories with permanent buff effects.
 		DisplayName: Crimtane Brewery
 	}
 
 	SingularityOfPieselopadaka: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			The core of the world.
+			Grants all blessings at the same time.
+			'''
 		DisplayName: Singularity Of Pieselopadaka
 	}
 
 	ShardOfVitality: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			A small piece of your lifeforce.
+			Improves your survivability.
+			'''
 		DisplayName: Shard Of Vitality
 	}
 
 	ShardOfUtility: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			A small piece of your creation.
+			Improves your sight, mobility and terrain manipulation.
+			'''
 		DisplayName: Shard Of Utility
 	}
 
 	ShardOfDestruction: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			A small piece of your power.
+			Improves your destructive potential.
+			'''
 		DisplayName: Shard Of Destruction
 	}
 
 	SummonersCatalyst: {
-		Tooltip: ""
+		Tooltip: A mystical token used to bind more creatures to you.
 		DisplayName: Summoners Catalyst
 	}
 
 	RangersGlove: {
-		Tooltip: ""
+		Tooltip: A fine-crafted glove. Strengthens your arm while using ranged weapons.
 		DisplayName: Rangers Glove
 	}
 
@@ -194,132 +210,144 @@ Items: {
 	}
 
 	BerserkersCirclet: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			Grants the combined Wrath and Rage buffs.
+			This buff does not stack with its downgrades.
+			'''
 		DisplayName: Berserkers Circlet
 	}
 
 	ArcaneFocus: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			Grants the combined Magic Power and Mana Regeneration buffs.
+			This buff does not stack with its downgrades.
+			'''
 		DisplayName: Arcane Focus
 	}
 
 	AquaticCharm: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			Grants the combined Flipper, Water Walking and Water Breathing buffs.
+			This buff does not stack with its downgrades.
+			'''
 		DisplayName: Aquatic Charm
 	}
 
 	SuperiorBandOfManaRegeneration: {
-		Tooltip: ""
+		Tooltip: Grants the Mana Regeneration buff.
 		DisplayName: Superior Band Of Mana Regeneration
 	}
 
 	RingOfLove: {
-		Tooltip: ""
+		Tooltip: Grants the Love buff.
 		DisplayName: Ring Of Love
 	}
 
 	PendantOfCalming: {
-		Tooltip: ""
+		Tooltip: Grants the Calming buff.
 		DisplayName: Pendant Of Calming
 	}
 
 	PendantOfBattle: {
-		Tooltip: ""
+		Tooltip: Grants the Battle buff.
 		DisplayName: Pendant Of Battle
 	}
 
 	NecklaceOfWarmth: {
-		Tooltip: ""
+		Tooltip: Grants the Warmth buff.
 		DisplayName: Necklace Of Warmth
 	}
 
 	NecklaceOfTitans: {
-		Tooltip: ""
+		Tooltip: Grants the Titan buff.
 		DisplayName: Necklace Of Titans
 	}
 
 	NecklaceOfSummoning: {
-		Tooltip: ""
+		Tooltip: Grants the Summoning buff.
 		DisplayName: Necklace Of Summoning
 	}
 
 	NecklaceOfRegeneration: {
-		Tooltip: ""
+		Tooltip: Grants the Regeneration buff.
 		DisplayName: Necklace Of Regeneration
 	}
 
 	NecklaceOfObsidianSkin: {
-		Tooltip: ""
+		Tooltip: Grants the Obsidian Skin buff.
 		DisplayName: Necklace Of Obsidian Skin
 	}
 
 	NecklaceOfLifeforce: {
-		Tooltip: ""
+		Tooltip: Grants the Lifeforce buff.
 		DisplayName: Necklace Of Lifeforce
 	}
 
 	NecklaceOfIronskin: {
-		Tooltip: ""
+		Tooltip: Grants the Ironskin buff.
 		DisplayName: Necklace Of Ironskin
 	}
 
 	NecklaceOfHeartreach: {
-		Tooltip: ""
+		Tooltip: Grants the Heartreach buff.
 		DisplayName: Necklace Of Heartreach
 	}
 
 	NecklaceOfEndurance: {
-		Tooltip: ""
+		Tooltip: Grants the Endurance buff.
 		DisplayName: Necklace Of Endurance
 	}
 
 	MonocleOfSpelunking: {
-		Tooltip: ""
+		Tooltip: Grants the Spelunker buff.
 		DisplayName: Monocle Of Spelunking
 	}
 
 	HuntersCloak: {
-		Tooltip: ""
+		Tooltip: Grants the Hunter buff.
 		DisplayName: Hunters Cloak
 	}
 
 	HopekScent: {
-		Tooltip: ""
+		Tooltip: Grants the Stink debuff.
 		DisplayName: Hopek Scent
 	}
 
 	GogglesOfBuilding: {
-		Tooltip: ""
+		Tooltip: Grants the Building buff.
 		DisplayName: Goggles Of Building
 	}
 
 	GauntletOfWrath: {
-		Tooltip: ""
+		Tooltip: Grants the Warmth buff.
 		DisplayName: Gauntlet Of Wrath
 	}
 
 	GauntletOfRage: {
-		Tooltip: ""
+		Tooltip: Grants the Rage buff.
 		DisplayName: Gauntlet Of Rage
 	}
 
 	GauntletOfAmmoReservation: {
-		Tooltip: ""
+		Tooltip: Grants the Ammo Reservation buff.
 		DisplayName: Gauntlet Of Ammo Reservation
 	}
 
 	EarringOfSonarVision: {
-		Tooltip: ""
+		Tooltip: Grants the Sonar Vision buff.
 		DisplayName: Earring Of Sonar Vision
 	}
 
 	EarringOfFishing: {
-		Tooltip: ""
+		Tooltip: Grants the Fishing buff.
 		DisplayName: Earring Of Fishing
 	}
 
 	EarringOfCrates: {
-		Tooltip: ""
+		Tooltip: Grants the Crates buff.
 		DisplayName: Earring Of Crates
 	}
 
@@ -329,87 +357,87 @@ Items: {
 	}
 
 	MysteriousTech: {
-		Tooltip: ""
+		Tooltip: What does it do...?
 		DisplayName: Mysterious Tech
 	}
 
 	CrownOfThorns: {
-		Tooltip: ""
+		Tooltip: Grants the Thorns buff.
 		DisplayName: Crown Of Thorns
 	}
 
 	CloakOfInvisibility: {
-		Tooltip: ""
+		Tooltip: Grants the Invisibility buff.
 		DisplayName: Cloak Of Invisibility
 	}
 
 	BandOfSwiftness: {
-		Tooltip: ""
+		Tooltip: Grants the Swiftness buff.
 		DisplayName: Band Of Swiftness
 	}
 
 	BandOfShining: {
-		Tooltip: ""
+		Tooltip: Grants the Shine buff.
 		DisplayName: Band Of Shining
 	}
 
 	BandOfNightOwl: {
-		Tooltip: ""
+		Tooltip: Grants the Night Owl buff.
 		DisplayName: Band Of Night Owl
 	}
 
 	BandOfMining: {
-		Tooltip: ""
+		Tooltip: Grants the Mining buff.
 		DisplayName: Band Of Mining
 	}
 
 	BandOfMagicPower: {
-		Tooltip: ""
+		Tooltip: Grants the Magic Power buff.
 		DisplayName: Band Of Magic Power
 	}
 
 	BandOfInferno: {
-		Tooltip: ""
+		Tooltip: Grants the Inferno buff.
 		DisplayName: Band Of Inferno
 	}
 
 	BandOfGravityControl: {
-		Tooltip: ""
+		Tooltip: Grants the Gravitation buff.
 		DisplayName: Band Of Gravity Control
 	}
 
 	BandOfDangersense: {
-		Tooltip: ""
+		Tooltip: Grants the Dangersense buff.
 		DisplayName: Band Of Dangersense
 	}
 
 	ArcheryGlove: {
-		Tooltip: ""
+		Tooltip: Grants the Archery buff.
 		DisplayName: Archery Glove
 	}
 
 	AnkletOfWaterWalking: {
-		Tooltip: ""
+		Tooltip: Grants the Water Walking buff.
 		DisplayName: Anklet Of Water Walking
 	}
 
 	AnkletOfGills: {
-		Tooltip: ""
+		Tooltip: Grants the Gills buff.
 		DisplayName: Anklet Of Gills
 	}
 
 	AnkletOfFlippers: {
-		Tooltip: ""
+		Tooltip: Grants the Flipper buff.
 		DisplayName: Anklet Of Flippers
 	}
 
 	AnkletOfFeatherfall: {
-		Tooltip: ""
+		Tooltip: Grants the Featherfall buff.
 		DisplayName: Anklet Of Featherfall
 	}
 
 	AmuletOfGreaterLuck: {
-		Tooltip: ""
+		Tooltip: Grants the Luck buff.
 		DisplayName: Amulet Of Greater Luck
 	}
 }

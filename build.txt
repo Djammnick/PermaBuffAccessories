@@ -1,0 +1,2 @@
+displayName = Permabuff Accessories
+version = 0.2
