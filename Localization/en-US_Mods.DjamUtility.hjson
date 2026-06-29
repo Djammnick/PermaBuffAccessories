@@ -165,47 +165,47 @@ Items: {
 	}
 
 	PortableLifeSupport: {
-		Tooltip: ""
+		Tooltip: A light Medical Kit. Increases your vitality.
 		DisplayName: Portable Life Support
 	}
 
 	MuskyPerfumes: {
-		Tooltip: ""
+		Tooltip: A flask full of disgusting stench in form of perfume. Why would you use this?
 		DisplayName: Musky Perfumes
 	}
 
 	LocationWarper: {
-		Tooltip: ""
+		Tooltip: An unstable artifact. Allows you to flip yourself upside down.
 		DisplayName: Location Warper
 	}
 
 	IronboundBracelet: {
-		Tooltip: ""
+		Tooltip: A bracelet made of most magical metals. Makes your skin ironlike.
 		DisplayName: Ironbound Bracelet
 	}
 
 	HellishCharm: {
-		Tooltip: ""
+		Tooltip: A very hot molten charm. Projects a circle of fire around you.
 		DisplayName: Hellish Charm
 	}
 
 	HandheldDrill: {
-		Tooltip: ""
+		Tooltip: A drill fitting only in worthy hands. Projects light around you, while making light sources stronger, and enchances your mining efficiency.
 		DisplayName: Handheld Drill
 	}
 
 	FourLeafClover: {
-		Tooltip: ""
+		Tooltip: A very lucky charm. Makes fortune favor you more.
 		DisplayName: Four Leaf Clover
 	}
 
 	FishermansScanner: {
-		Tooltip: ""
+		Tooltip: A trout monkey's favourite tool. Enchances your bait, as well as your eye for fish and crate.
 		DisplayName: Fishermans Scanner
 	}
 
 	DjamsGlasses: {
-		Tooltip: ""
+		Tooltip: A mighty pair of glasses. Grants you most potent vision.
 		DisplayName: Djams Glasses
 	}
 
