@@ -190,7 +190,8 @@ Items: {
 	}
 
 	HandheldDrill: {
-		Tooltip: A drill fitting only in worthy hands. 
+		Tooltip: 
+		A drill fitting only in worthy hands. 
 		Projects light around you, while making light sources stronger, and enchances your mining efficiency.
 		DisplayName: Handheld Drill
 	}
