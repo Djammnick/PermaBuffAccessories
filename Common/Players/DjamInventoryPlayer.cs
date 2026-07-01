@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using DjamUtility.Content.Items.Accessories.DjamSpecifics;
 using DjamUtility.Content.Items.Placeables;
@@ -11,35 +12,33 @@ public class DjamInventoryPlayer : ModPlayer
 {
     public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)/* tModPorter Suggestion: Return an Item array to add to the players starting items. Use ModifyStartingInventory for modifying them if needed */
     {
-        if (!mediumCoreDeath)
+        List<Item> additionalInventory = [];
+        if(!mediumCoreDeath)
         {
-            if (!Player.name.Contains("Prak"))
+            additionalInventory.Add(new Item(ModContent.ItemType<RulesCard>(), 1, 0));
+            if(Player.name.Contains("Djam"))
             {
-                if (!Player.name.Contains("Djam"))
-                {
-                    return (IEnumerable<Item>)(object)new Item[1]
-                    {
-                        new Item(ModContent.ItemType<RulesCard>(), 1, 0)
-                    };
-                }
-                return (IEnumerable<Item>)(object)new Item[1]
-                {
-                    new Item(ModContent.ItemType<MysteriousTech>(), 1, 0)
-                };
+                additionalInventory.Add(new Item(ModContent.ItemType<MysteriousTech>(), 1, 0));
             }
-            return (IEnumerable<Item>)(object)new Item[1]
+            if(Player.name.Contains("Prak"))
             {
-                new Item(ModContent.ItemType<PrakMusicBox>(), 1, 0)
-            };
+                additionalInventory.Add(new Item(ModContent.ItemType<PrakMusicBox>(), 1, 0));
+            }
         }
-        return (IEnumerable<Item>)(object)new Item[1]
-        {
-            new Item(188, 1, 0)
-        };
+        return additionalInventory;
     }
 
     public override void ModifyStartingInventory(IReadOnlyDictionary<string, List<Item>> itemsByMod, bool mediumCoreDeath)
     {
-        itemsByMod["Terraria"].RemoveAll((Item item) => item.type == ItemID.IronAxe);
+        if(Player.name.Contains("Djam"))
+        {
+            foreach(Item item in itemsByMod["Terraria"])
+            {
+                if(item.type == ItemID.CopperShortsword)
+                {
+                    item.SetDefaults(ModContent.ItemType<Djamnith>());
+                }
+            }
+        }
     }
 }
