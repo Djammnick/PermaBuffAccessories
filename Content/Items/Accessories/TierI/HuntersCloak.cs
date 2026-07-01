@@ -2,19 +2,19 @@ using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.ModLoader.IO;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
 
-[AutoloadEquip(/*Could not decode attribute arguments.*/)]
+[AutoloadEquip(EquipType.Back, EquipType.Front)]
 public class HuntersCloak : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Hunter's Cloak");
-        // ((ModItem)this).Tooltip.SetDefault("Applies the Hunter buff that lasts until taken off.\n'I'm sure nobody will see you in that red color...'");
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
     }
-
+	
     public override void SetDefaults()
     {
         ((Entity)((ModItem)this).Item).width = 20;

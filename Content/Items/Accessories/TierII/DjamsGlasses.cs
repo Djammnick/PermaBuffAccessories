@@ -3,9 +3,12 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ModLoader.IO;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
+[AutoloadEquip(EquipType.Face)]
 public class DjamsGlasses : ModItem
 {
     public override void SetStaticDefaults()
@@ -25,6 +28,7 @@ public class DjamsGlasses : ModItem
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
         ((ModItem)this).Item.rare = 4;
+		((ModItem)this).Item.vanity = true;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
