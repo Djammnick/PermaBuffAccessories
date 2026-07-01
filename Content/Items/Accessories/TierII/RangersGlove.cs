@@ -3,9 +3,12 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ModLoader.IO;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
+[AutoloadEquip(EquipType.HandsOn, EquipType.HandsOff)]
 public class RangersGlove : ModItem
 {
     public override void SetStaticDefaults()
