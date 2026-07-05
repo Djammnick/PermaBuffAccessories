@@ -20,7 +20,7 @@ public class ShardOfVitality : ModItem
         // ((ModItem)this).Tooltip.SetDefault("Your inner power is immense.\n'The third one of the legendary shards'");
         Main.RegisterItemAnimation(((ModItem)this).Item.type, (DrawAnimation)new DrawAnimationVertical(5, 15, false));
         ItemID.Sets.AnimatesAsSoul[Item.type] = true;
-        ItemID.Sets.ItemIconPulse[Item.type] = true;
+        ItemID.Sets.ItemIconPulse[Item.type] = false;
         ItemID.Sets.ItemNoGravity[Item.type] = true;
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }

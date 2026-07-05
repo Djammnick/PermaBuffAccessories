@@ -18,7 +18,7 @@ public class SingularityOfPieselopadaka : ModItem
         // ((ModItem)this).Tooltip.SetDefault("The power of Pieselopadaka is in your hands.");
         Main.RegisterItemAnimation(((ModItem)this).Item.type, (DrawAnimation)new DrawAnimationVertical(5, 18, false));
         ItemID.Sets.AnimatesAsSoul[((ModItem)this).Item.type] = true;
-        ItemID.Sets.ItemIconPulse[((ModItem)this).Item.type] = true;
+        ItemID.Sets.ItemIconPulse[((ModItem)this).Item.type] = false;
         ItemID.Sets.ItemNoGravity[((ModItem)this).Item.type] = true;
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
     }

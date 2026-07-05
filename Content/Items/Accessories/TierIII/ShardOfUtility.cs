@@ -18,9 +18,9 @@ public class ShardOfUtility : ModItem
         //IL_0039: Expected O, but got Unknown
         // ((ModItem)this).DisplayName.SetDefault("Shard of Utility");
         // ((ModItem)this).Tooltip.SetDefault("Your possibilities are countless.\n'The second one of the legendary shards'");
-        Main.RegisterItemAnimation(((ModItem)this).Item.type, (DrawAnimation)new DrawAnimationVertical(5, 15, false));
+        Main.RegisterItemAnimation(((ModItem)this).Item.type, (DrawAnimation)new DrawAnimationVertical(5, 18, false));
         ItemID.Sets.AnimatesAsSoul[((ModItem)this).Item.type] = true;
-        ItemID.Sets.ItemIconPulse[((ModItem)this).Item.type] = true;
+        ItemID.Sets.ItemIconPulse[((ModItem)this).Item.type] = false;
         ItemID.Sets.ItemNoGravity[((ModItem)this).Item.type] = true;
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
     }
