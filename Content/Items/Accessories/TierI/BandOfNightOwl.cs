@@ -5,6 +5,7 @@ using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
 
+[AutoloadEquip(EquipType.HandsOn)]
 public class BandOfNightOwl : ModItem
 {
     public override void SetStaticDefaults()

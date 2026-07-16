@@ -5,6 +5,7 @@ using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
 
+[AutoloadEquip(EquipType.HandsOn)]
 public class BandOfGravityControl : ModItem
 {
     public override void SetStaticDefaults()

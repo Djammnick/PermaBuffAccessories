@@ -5,6 +5,7 @@ using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
 
+[AutoloadEquip(EquipType.HandsOn)]
 public class BandOfDangersense : ModItem
 {
     public override void SetStaticDefaults()
@@ -23,6 +24,7 @@ public class BandOfDangersense : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
+		((ModItem)this).Item.vanity = true;
         ((ModItem)this).Item.rare = 1;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }

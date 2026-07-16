@@ -5,6 +5,7 @@ using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
 
+[AutoloadEquip(EquipType.HandsOn)]
 public class BandOfMagicPower : ModItem
 {
     public override void SetStaticDefaults()
