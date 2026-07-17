@@ -1,6 +1,7 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Placeables;
@@ -25,6 +26,6 @@ public class LivingBrewery : ModItem
         ((ModItem)this).Item.createTile = ModContent.TileType<LivingBreweryTile>();
         ((Entity)((ModItem)this).Item).width = 24;
         ((Entity)((ModItem)this).Item).height = 24;
-        ((ModItem)this).Item.rare = 7;
+        ((ModItem)this).Item.rare = ItemRarityID.Lime;
     }
 }
