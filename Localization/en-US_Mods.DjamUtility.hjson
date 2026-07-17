@@ -335,9 +335,9 @@ Items: {
 		DisplayName: Gauntlet Of Rage
 	}
 
-	GauntletOfAmmoReservation: {
-		Tooltip: Grants the Ammo Reservation buff.
-		DisplayName: Gauntlet Of Ammo Reservation
+	AmmoReservationPouch: {
+		DisplayName: Ammo Reservation Pouch
+		Tooltip: Grants the Ammo Reservation Buff.
 	}
 
 	EarringOfSonarVision: {
