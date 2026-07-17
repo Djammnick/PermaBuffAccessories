@@ -13,8 +13,6 @@ public class RangersGlove : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Ranger's Glove");
-        // ((ModItem)this).Tooltip.SetDefault("Increases your archery power and decreases ammo consumption.\n'Forged in the depths of Hopek's basement.'");
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
     }
 
@@ -27,7 +25,7 @@ public class RangersGlove : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
+        ((ModItem)this).Item.rare = 4;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -38,15 +36,15 @@ public class RangersGlove : ModItem
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient<ArcheryGlove>(1).AddIngredient<GauntletOfAmmoReservation>(1)
-            .AddIngredient(ItemID.ShadowScale, 10)
-            .AddIngredient(ItemID.Leather, 10)
-            .AddTile(TileID.AlchemyTable)
+        ((ModItem)this).CreateRecipe(1).AddIngredient<ArcheryGlove>(1).AddIngredient<AmmoReservationPouch>(1)
+            .AddIngredient(86, 10)
+            .AddIngredient(259, 10)
+            .AddTile(355)
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient<ArcheryGlove>(1).AddIngredient<GauntletOfAmmoReservation>(1)
-            .AddIngredient(ItemID.TissueSample, 10)
-            .AddIngredient(ItemID.Leather, 10)
-            .AddTile(TileID.AlchemyTable)
+        ((ModItem)this).CreateRecipe(1).AddIngredient<ArcheryGlove>(1).AddIngredient<AmmoReservationPouch>(1)
+            .AddIngredient(1329, 10)
+            .AddIngredient(259, 10)
+            .AddTile(355)
             .Register();
     }
 }

@@ -1,7 +1,6 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -25,23 +24,23 @@ public class BandOfMining : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Blue;
+        ((ModItem)this).Item.rare = 1;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Mining, 10, true, false);
+        player.AddBuff(104, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.MiningPotion, 15).AddIngredient(ItemID.MiningHelmet, 1)
-            .AddIngredient(ItemID.StoneBlock, 100)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2322, 15).AddIngredient(88, 1)
+            .AddIngredient(3, 100)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.MiningPotion, 15).AddIngredient(ItemID.MiningHelmet, 1)
-            .AddIngredient(ItemID.StoneBlock, 100)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2322, 15).AddIngredient(88, 1)
+            .AddIngredient(3, 100)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

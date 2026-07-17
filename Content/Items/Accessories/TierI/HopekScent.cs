@@ -1,7 +1,6 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -24,27 +23,27 @@ public class HopekScent : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Blue;
+        ((ModItem)this).Item.rare = 1;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
         ((ModItem)this).Item.vanity = true;
     }
 
     public override void UpdateVanity(Player player)
     {
-        player.AddBuff(BuffID.Stinky, 10, true, false);
+        player.AddBuff(120, 10, true, false);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Stinky, 10, true, false);
+        player.AddBuff(120, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.StinkPotion, 5).AddIngredient(ItemID.CactusHelmet, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2353, 5).AddIngredient(894, 1)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.StinkPotion, 5).AddIngredient(ItemID.CactusHelmet, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2353, 5).AddIngredient(894, 1)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

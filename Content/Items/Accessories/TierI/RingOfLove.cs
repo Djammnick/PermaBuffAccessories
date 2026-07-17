@@ -1,7 +1,6 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -24,27 +23,27 @@ public class RingOfLove : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Blue;
+        ((ModItem)this).Item.rare = 1;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
         ((ModItem)this).Item.vanity = true;
     }
 
     public override void UpdateVanity(Player player)
     {
-        player.AddBuff(BuffID.Lovestruck, 10, true, false);
+        player.AddBuff(119, 10, true, false);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Lovestruck, 10, true, false);
+        player.AddBuff(119, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.LovePotion, 5).AddIngredient(ItemID.MulticoloredStainedGlass, 50)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2352, 5).AddIngredient(1272, 50)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.LovePotion, 5).AddIngredient(ItemID.MulticoloredStainedGlass, 50)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2352, 5).AddIngredient(1272, 50)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

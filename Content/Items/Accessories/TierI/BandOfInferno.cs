@@ -1,7 +1,6 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -25,21 +24,21 @@ public class BandOfInferno : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Green;
+        ((ModItem)this).Item.rare = 2;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Inferno, 10, true, false);
+        player.AddBuff(116, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.InfernoPotion, 15).AddIngredient(ItemID.AshBlock, 25)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2348, 15).AddIngredient(172, 25)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.InfernoPotion, 15).AddIngredient(ItemID.AshBlock, 25)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2348, 15).AddIngredient(172, 25)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

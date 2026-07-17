@@ -1,11 +1,11 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
 
+[AutoloadEquip(EquipType.Neck)]
 public class NecklaceOfRegeneration : ModItem
 {
     public override void SetStaticDefaults()
@@ -24,21 +24,21 @@ public class NecklaceOfRegeneration : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Blue;
+        ((ModItem)this).Item.rare = 1;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Regeneration, 10, true, false);
+        player.AddBuff(2, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.RegenerationPotion, 15).AddIngredient(ItemID.BandofRegeneration, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(289, 15).AddIngredient(49, 1)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.RegenerationPotion, 15).AddIngredient(ItemID.BandofRegeneration, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(289, 15).AddIngredient(49, 1)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

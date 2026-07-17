@@ -13,8 +13,6 @@ public class DjamsGlasses : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Djam's Glasses");
-        // ((ModItem)this).Tooltip.SetDefault("Allows you to see ores, creatures and dangers.\n'Thick as a bottle's den.'");
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
     }
 

@@ -1,11 +1,11 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
 
+[AutoloadEquip(EquipType.Neck)]
 public class NecklaceOfSummoning : ModItem
 {
     public override void SetStaticDefaults()
@@ -24,21 +24,21 @@ public class NecklaceOfSummoning : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Blue;
+        ((ModItem)this).Item.rare = 1;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Summoning, 10, true, false);
+        player.AddBuff(110, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.SummoningPotion, 15).AddIngredient(ItemID.SlimeStaff, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2328, 15).AddIngredient(1309, 1)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.SummoningPotion, 15).AddIngredient(ItemID.SlimeStaff, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(2328, 15).AddIngredient(1309, 1)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

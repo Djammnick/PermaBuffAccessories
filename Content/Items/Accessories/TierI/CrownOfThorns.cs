@@ -1,7 +1,6 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -25,28 +24,28 @@ public class CrownOfThorns : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Green;
+        ((ModItem)this).Item.rare = 2;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
         ((ModItem)this).Item.vanity = true;
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Thorns, 10, true, false);
+        player.AddBuff(14, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.ThornsPotion, 15).AddIngredient(ItemID.GoldCrown, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(301, 15).AddIngredient(264, 1)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.ThornsPotion, 15).AddIngredient(ItemID.GoldCrown, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(301, 15).AddIngredient(264, 1)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.ThornsPotion, 15).AddIngredient(ItemID.PlatinumCrown, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(301, 15).AddIngredient(715, 1)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.ThornsPotion, 15).AddIngredient(ItemID.PlatinumCrown, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(301, 15).AddIngredient(715, 1)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

@@ -24,13 +24,13 @@ public class AnkletOfFeatherfall : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Green;
+        ((ModItem)this).Item.rare = 2;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(BuffID.Featherfall, 10, true, false);
+        player.AddBuff(8, 10, true, false);
     }
 
     public override void AddRecipes()
