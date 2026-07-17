@@ -1,6 +1,7 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -23,35 +24,35 @@ public class EarringOfCrates : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 1;
+        ((ModItem)this).Item.rare = ItemRarityID.Blue;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(123, 10, true, false);
+        player.AddBuff(BuffID.Crate, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2356, 15).AddIngredient(2334, 3)
-            .AddIngredient(2335, 3)
-            .AddIngredient(2336, 3)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrate, 3)
+            .AddIngredient(ItemID.IronCrate, 3)
+            .AddIngredient(ItemID.GoldenCrate, 3)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2356, 15).AddIngredient(2334, 3)
-            .AddIngredient(2335, 3)
-            .AddIngredient(2336, 3)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrate, 3)
+            .AddIngredient(ItemID.IronCrate, 3)
+            .AddIngredient(ItemID.GoldenCrate, 3)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2356, 15).AddIngredient(3979, 3)
-            .AddIngredient(3980, 3)
-            .AddIngredient(3981, 3)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrateHard, 3)
+            .AddIngredient(ItemID.IronCrateHard, 3)
+            .AddIngredient(ItemID.GoldenCrateHard, 3)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2356, 15).AddIngredient(3979, 3)
-            .AddIngredient(3980, 3)
-            .AddIngredient(3981, 3)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrateHard, 3)
+            .AddIngredient(ItemID.IronCrateHard, 3)
+            .AddIngredient(ItemID.GoldenCrateHard, 3)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

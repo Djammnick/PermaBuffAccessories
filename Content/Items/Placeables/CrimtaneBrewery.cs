@@ -1,6 +1,7 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Placeables;
@@ -9,33 +10,32 @@ public class CrimtaneBrewery : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Crimtane Brewery");
-        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
+        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }
 
     public override void SetDefaults()
     {
-        ((ModItem)this).Item.useStyle = 1;
-        ((ModItem)this).Item.useTurn = true;
-        ((ModItem)this).Item.useAnimation = 15;
-        ((ModItem)this).Item.useTime = 10;
-        ((ModItem)this).Item.autoReuse = true;
-        ((ModItem)this).Item.consumable = true;
-        ((ModItem)this).Item.createTile = ModContent.TileType<CrimtaneBreweryTile>();
-        ((Entity)((ModItem)this).Item).width = 24;
-        ((Entity)((ModItem)this).Item).height = 24;
-        ((ModItem)this).Item.rare = 2;
+        Item.useStyle = ItemUseStyleID.Swing;
+        Item.useTurn = true;
+        Item.useAnimation = 15;
+        Item.useTime = 10;
+        Item.autoReuse = true;
+        Item.consumable = true;
+        Item.createTile = ModContent.TileType<CrimtaneBreweryTile>();
+        Item.width = 24;
+        Item.height = 24;
+        Item.rare = ItemRarityID.Green;
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(31, 1).AddIngredient(35, 1)
-            .AddIngredient(1257, 15)
-            .AddTile(16)
+        CreateRecipe(1).AddIngredient(ItemID.Bottle, 1).AddIngredient(ItemID.IronAnvil, 1)
+            .AddIngredient(ItemID.CrimtaneBar, 15)
+            .AddTile(TileID.Anvils)
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(31, 1).AddIngredient(716, 1)
-            .AddIngredient(1257, 15)
-            .AddTile(16)
+        CreateRecipe(1).AddIngredient(ItemID.Bottle, 1).AddIngredient(ItemID.LeadAnvil, 1)
+            .AddIngredient(ItemID.CrimtaneBar, 15)
+            .AddTile(TileID.Anvils)
             .Register();
     }
 }

@@ -1,6 +1,7 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -23,23 +24,23 @@ public class ArcheryGlove : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 1;
+        ((ModItem)this).Item.rare = ItemRarityID.Blue;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(16, 10, true, false);
+        player.AddBuff(BuffID.Archery, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(303, 15).AddIngredient(40, 100)
-            .AddIngredient(259, 5)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.ArcheryPotion, 15).AddIngredient(ItemID.WoodenArrow, 100)
+            .AddIngredient(ItemID.Leather, 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(303, 15).AddIngredient(40, 100)
-            .AddIngredient(259, 5)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.ArcheryPotion, 15).AddIngredient(ItemID.WoodenArrow, 100)
+            .AddIngredient(ItemID.Leather, 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

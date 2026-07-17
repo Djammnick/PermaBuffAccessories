@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -25,7 +26,7 @@ public class AquaticCharm : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -38,9 +39,9 @@ public class AquaticCharm : ModItem
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<AnkletOfFlippers>(1).AddIngredient<AnkletOfGills>(1)
             .AddIngredient<AnkletOfWaterWalking>(1)
-            .AddIngredient(275, 15)
-            .AddIngredient(863, 1)
-            .AddTile(355)
+            .AddIngredient(ItemID.Coral, 15)
+            .AddIngredient(ItemID.WaterWalkingBoots, 1)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class LocationWarper : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -37,8 +38,8 @@ public class LocationWarper : ModItem
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<AnkletOfFeatherfall>(1).AddIngredient<BandOfGravityControl>(1)
             .AddIngredient<BandOfSwiftness>(1)
-            .AddIngredient(181, 15)
-            .AddTile(355)
+            .AddIngredient(ItemID.Amethyst, 15)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

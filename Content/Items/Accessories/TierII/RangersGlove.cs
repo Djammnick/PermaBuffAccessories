@@ -27,7 +27,7 @@ public class RangersGlove : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -39,14 +39,14 @@ public class RangersGlove : ModItem
     public override void AddRecipes()
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<ArcheryGlove>(1).AddIngredient<GauntletOfAmmoReservation>(1)
-            .AddIngredient(86, 10)
-            .AddIngredient(259, 10)
-            .AddTile(355)
+            .AddIngredient(ItemID.ShadowScale, 10)
+            .AddIngredient(ItemID.Leather, 10)
+            .AddTile(TileID.AlchemyTable)
             .Register();
         ((ModItem)this).CreateRecipe(1).AddIngredient<ArcheryGlove>(1).AddIngredient<GauntletOfAmmoReservation>(1)
-            .AddIngredient(1329, 10)
-            .AddIngredient(259, 10)
-            .AddTile(355)
+            .AddIngredient(ItemID.TissueSample, 10)
+            .AddIngredient(ItemID.Leather, 10)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

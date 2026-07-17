@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class FishermansScanner : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -37,9 +38,9 @@ public class FishermansScanner : ModItem
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<EarringOfSonarVision>(1).AddIngredient<EarringOfFishing>(1)
             .AddIngredient<EarringOfCrates>(1)
-            .AddIngredient(3118, 1)
-            .AddIngredient(3084, 1)
-            .AddTile(355)
+            .AddIngredient(ItemID.LifeformAnalyzer, 1)
+            .AddIngredient(ItemID.Radar, 1)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class FourLeafClover : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -35,10 +36,10 @@ public class FourLeafClover : ModItem
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient<AmuletOfGreaterLuck>(1).AddIngredient(4477, 15)
-            .AddIngredient(4478, 15)
-            .AddIngredient(62, 20)
-            .AddTile(355)
+        ((ModItem)this).CreateRecipe(1).AddIngredient<AmuletOfGreaterLuck>(1).AddIngredient(ItemID.LuckPotionLesser, 15)
+            .AddIngredient(ItemID.LuckPotion, 15)
+            .AddIngredient(ItemID.GrassSeeds, 20)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

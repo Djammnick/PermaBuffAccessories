@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class HellishCharm : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -36,9 +37,9 @@ public class HellishCharm : ModItem
     public override void AddRecipes()
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<BandOfInferno>(1).AddIngredient<NecklaceOfObsidianSkin>(1)
-            .AddIngredient(174, 20)
-            .AddIngredient(116, 10)
-            .AddTile(355)
+            .AddIngredient(ItemID.Hellstone, 20)
+            .AddIngredient(ItemID.Meteorite, 10)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

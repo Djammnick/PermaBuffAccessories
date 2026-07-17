@@ -1,5 +1,6 @@
 using Terraria;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.DjamSpecifics;
@@ -21,13 +22,13 @@ public class RulesCard : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 2;
+        ((ModItem)this).Item.rare = ItemRarityID.Green;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(225, 1).AddTile(26)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.Silk, 1).AddTile(TileID.DemonAltar)
             .Register();
     }
 }

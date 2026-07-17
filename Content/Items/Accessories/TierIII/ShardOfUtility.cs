@@ -34,7 +34,7 @@ public class ShardOfUtility : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 7;
+        ((ModItem)this).Item.rare = ItemRarityID.Lime;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -61,7 +61,7 @@ public class ShardOfUtility : ModItem
         ((ModItem)this).CreateRecipe(1).AddIngredient<DjamsGlasses>(1).AddIngredient<FourLeafClover>(1)
             .AddIngredient<HandheldDrill>(1)
             .AddIngredient<FishermansScanner>(1)
-            .AddIngredient(1291, 5)
+            .AddIngredient(ItemID.LifeFruit, 5)
             .AddTile<LivingBreweryTile>()
             .Register();
     }

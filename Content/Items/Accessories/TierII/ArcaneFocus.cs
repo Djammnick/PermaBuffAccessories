@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class ArcaneFocus : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -36,8 +37,8 @@ public class ArcaneFocus : ModItem
     public override void AddRecipes()
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<BandOfMagicPower>(1).AddIngredient<SuperiorBandOfManaRegeneration>(1)
-            .AddIngredient(75, 25)
-            .AddTile(355)
+            .AddIngredient(ItemID.FallenStar, 25)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

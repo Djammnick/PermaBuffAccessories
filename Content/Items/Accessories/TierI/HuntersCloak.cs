@@ -24,22 +24,22 @@ public class HuntersCloak : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 2;
+        ((ModItem)this).Item.rare = ItemRarityID.Green;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
         ((ModItem)this).Item.vanity = true;
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(17, 10, true, false);
+        player.AddBuff(BuffID.Hunter, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(304, 5).AddIngredient(225, 15)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.HunterPotion, 5).AddIngredient(ItemID.Silk, 15)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(304, 5).AddIngredient(225, 15)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.HunterPotion, 5).AddIngredient(ItemID.Silk, 15)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class PortableLifeSupport : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -37,17 +38,17 @@ public class PortableLifeSupport : ModItem
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<NecklaceOfLifeforce>(1).AddIngredient<NecklaceOfRegeneration>(1)
             .AddIngredient<NecklaceOfHeartreach>(1)
-            .AddIngredient(29, 5)
-            .AddIngredient(154, 15)
-            .AddIngredient(86, 15)
-            .AddTile(355)
+            .AddIngredient(ItemID.LifeCrystal, 5)
+            .AddIngredient(ItemID.Bone, 15)
+            .AddIngredient(ItemID.ShadowScale, 15)
+            .AddTile(TileID.AlchemyTable)
             .Register();
         ((ModItem)this).CreateRecipe(1).AddIngredient<NecklaceOfLifeforce>(1).AddIngredient<NecklaceOfRegeneration>(1)
             .AddIngredient<NecklaceOfHeartreach>(1)
-            .AddIngredient(29, 5)
-            .AddIngredient(154, 15)
-            .AddIngredient(1329, 15)
-            .AddTile(355)
+            .AddIngredient(ItemID.LifeCrystal, 5)
+            .AddIngredient(ItemID.Bone, 15)
+            .AddIngredient(ItemID.TissueSample, 15)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

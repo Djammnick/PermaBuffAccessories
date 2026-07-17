@@ -27,7 +27,7 @@ public class DjamsGlasses : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
 		((ModItem)this).Item.vanity = true;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
@@ -41,9 +41,9 @@ public class DjamsGlasses : ModItem
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<BandOfDangersense>(1).AddIngredient<HuntersCloak>(1)
             .AddIngredient<MonocleOfSpelunking>(1)
-            .AddIngredient(154, 15)
-            .AddIngredient(170, 60)
-            .AddTile(355)
+            .AddIngredient(ItemID.Bone, 15)
+            .AddIngredient(ItemID.Glass, 60)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

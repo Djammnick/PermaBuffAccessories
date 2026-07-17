@@ -1,6 +1,7 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -23,31 +24,31 @@ public class PendantOfCalming : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 1;
+        ((ModItem)this).Item.rare = ItemRarityID.Blue;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(106, 10, true, false);
+        player.AddBuff(BuffID.Calm, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2324, 15).AddIngredient(313, 1)
-            .AddIngredient(315, 1)
-            .AddIngredient(317, 1)
-            .AddIngredient(314, 1)
-            .AddIngredient(316, 1)
-            .AddIngredient(318, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.CalmingPotion, 15).AddIngredient(ItemID.Daybloom, 1)
+            .AddIngredient(ItemID.Blinkroot, 1)
+            .AddIngredient(ItemID.Waterleaf, 1)
+            .AddIngredient(ItemID.Moonglow, 1)
+            .AddIngredient(ItemID.Deathweed, 1)
+            .AddIngredient(ItemID.Fireblossom, 1)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2324, 15).AddIngredient(313, 1)
-            .AddIngredient(315, 1)
-            .AddIngredient(317, 1)
-            .AddIngredient(314, 1)
-            .AddIngredient(316, 1)
-            .AddIngredient(318, 1)
+        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.CalmingPotion, 15).AddIngredient(ItemID.Daybloom, 1)
+            .AddIngredient(ItemID.Blinkroot, 1)
+            .AddIngredient(ItemID.Waterleaf, 1)
+            .AddIngredient(ItemID.Moonglow, 1)
+            .AddIngredient(ItemID.Deathweed, 1)
+            .AddIngredient(ItemID.Fireblossom, 1)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class IronboundBracelet : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -37,8 +38,8 @@ public class IronboundBracelet : ModItem
     {
         ((ModItem)this).CreateRecipe(1).AddIngredient<NecklaceOfEndurance>(1).AddIngredient<NecklaceOfIronskin>(1)
             .AddIngredient<NecklaceOfWarmth>(1)
-            .AddIngredient(147, 25)
-            .AddTile(355)
+            .AddIngredient(ItemID.Spike, 25)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using DjamUtility.Content.Items.Accessories.TierI;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace DjamUtility.Content.Items.Accessories.TierII;
 
@@ -24,7 +25,7 @@ public class SummonersCatalyst : ModItem
         ((ModItem)this).Item.maxStack = 1;
         ((ModItem)this).Item.consumable = false;
         ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 4;
+        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
         ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
@@ -35,8 +36,8 @@ public class SummonersCatalyst : ModItem
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient<NecklaceOfSummoning>(1).AddIngredient(2999, 1)
-            .AddTile(355)
+        ((ModItem)this).CreateRecipe(1).AddIngredient<NecklaceOfSummoning>(1).AddIngredient(ItemID.BewitchingTable, 1)
+            .AddTile(TileID.AlchemyTable)
             .Register();
     }
 }
