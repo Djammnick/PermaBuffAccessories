@@ -190,11 +190,11 @@ Items: {
 	}
 
 	HandheldDrill: {
-		Tooltip: 
-		'''
-		A drill fitting only in worthy hands. 
-		Projects light around you, while making light sources stronger, and enchances your mining efficiency.
-		'''
+		Tooltip:
+			'''
+			A drill fitting only in worthy hands. 
+			Projects light around you, while making light sources stronger, and enchances your mining efficiency.
+			'''
 		DisplayName: Handheld Drill
 	}
 
@@ -444,4 +444,11 @@ Items: {
 		Tooltip: Grants the Luck buff.
 		DisplayName: Amulet Of Greater Luck
 	}
+
+	Djamnith: {
+		DisplayName: Djamnith
+		Tooltip: "A worthless copy."
+	}
 }
+
+Projectiles.ZenithStabProjectile.DisplayName: Zenith Stab Projectile

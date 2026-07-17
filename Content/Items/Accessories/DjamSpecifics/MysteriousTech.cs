@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.DjamSpecifics;
 
-[AutoloadEquip(/*Could not decode attribute arguments.*/)]
+[AutoloadEquip(EquipType.Balloon)]
 public class MysteriousTech : ModItem
 {
     public override void SetStaticDefaults()
