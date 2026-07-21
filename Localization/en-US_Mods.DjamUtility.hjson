@@ -449,6 +449,17 @@ Items: {
 		DisplayName: Djamnith
 		Tooltip: A worthless copy.
 	}
+
+	GauntletOfAmmoReservation: {
+		DisplayName: Gauntlet Of Ammo Reservation
+		Tooltip: ""
+	}
+
+	WindWalkerCore: {
+		DisplayName: Wind Walker Core
+		Tooltip: ""
+	}
 }
 
 Projectiles.ZenithStabProjectile.DisplayName: Zenith Stab Projectile
+NPCs.WindWalker.DisplayName: Wind Walker
