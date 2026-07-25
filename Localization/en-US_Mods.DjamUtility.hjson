@@ -1,8 +1,7 @@
 Tiles: {
-	PrakMusicBoxTile.MapEntry: Prak Music Box Tile
-	LivingBreweryTile.MapEntry: Living Brewery Tile
-	DemoniteBreweryTile.MapEntry: Demonite Brewery Tile
-	CrimtaneBreweryTile.MapEntry: Crimtane Brewery Tile
+	LivingBreweryTile.MapEntry: Living Brewery
+	DemoniteBreweryTile.MapEntry: Demonite Brewery
+	CrimtaneBreweryTile.MapEntry: Crimtane Brewery
 }
 
 Buffs: {
@@ -98,11 +97,6 @@ Buffs: {
 }
 
 Items: {
-	PrakMusicBox: {
-		Tooltip: A blessed tune.
-		DisplayName: Prak Music Box
-	}
-
 	LivingBrewery: {
 		Tooltip: Used to fuse many powerful forces into one.
 		DisplayName: Living Brewery

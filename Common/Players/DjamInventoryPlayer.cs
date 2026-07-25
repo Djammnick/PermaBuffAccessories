@@ -10,7 +10,7 @@ namespace DjamUtility.Common.Players;
 
 public class DjamInventoryPlayer : ModPlayer
 {
-    public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)/* tModPorter Suggestion: Return an Item array to add to the players starting items. Use ModifyStartingInventory for modifying them if needed */
+    public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)
     {
         List<Item> additionalInventory = [];
         if(!mediumCoreDeath)
@@ -20,10 +20,10 @@ public class DjamInventoryPlayer : ModPlayer
             {
                 additionalInventory.Add(new Item(ModContent.ItemType<MysteriousTech>(), 1, 0));
             }
-            if(Player.name.Contains("Prak"))
+            /*if(Player.name.Contains("Prak"))
             {
                 additionalInventory.Add(new Item(ModContent.ItemType<PrakMusicBox>(), 1, 0));
-            }
+            }*/
         }
         return additionalInventory;
     }
