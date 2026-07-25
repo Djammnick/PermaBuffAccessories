@@ -13,18 +13,18 @@ public class MysteriousTech : ModItem
     {
         // ((ModItem)this).DisplayName.SetDefault("Djammnick's Control Pad: Inactive");
         // ((ModItem)this).Tooltip.SetDefault("'What does it even do...?'");
-        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
+        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }
 
     public override void SetDefaults()
     {
-        ((Entity)((ModItem)this).Item).width = 22;
-        ((Entity)((ModItem)this).Item).height = 28;
-        ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Expert;
-        ((ModItem)this).Item.value = Item.sellPrice(0, 0, 0, 0);
-        ((ModItem)this).Item.vanity = true;
-        ((ModItem)this).Item.maxStack = 1;
+        Item.width = 22;
+        Item.height = 28;
+        Item.accessory = true;
+        Item.rare = ItemRarityID.Expert;
+        Item.value = Item.sellPrice(0, 0, 0, 0);
+        Item.vanity = true;
+        Item.maxStack = 1;
     }
 
     public override bool CanRightClick()

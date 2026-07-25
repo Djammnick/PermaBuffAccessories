@@ -16,7 +16,7 @@ public class UndergroundImmersion : ModBuff
         //IL_001a: Unknown result type (might be due to invalid IL or missing references)
         player.pickSpeed += 0.25f;
         player.nightVision = true;
-        Lighting.AddLight(((Entity)player).position, 0);
+        Lighting.AddLight(player.position, 0);
         player.tileSpeed += 0.25f;
         player.wallSpeed += 0.25f;
         player.buffImmune[11] = true;

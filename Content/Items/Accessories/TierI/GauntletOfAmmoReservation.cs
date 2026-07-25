@@ -10,22 +10,20 @@ public class GauntletOfAmmoReservation : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Gauntlet of Ammo Reservation");
-        // ((ModItem)this).Tooltip.SetDefault("Applies the Ammo Reservation buff that lasts until taken off.\n'Where does this even come from...?'");
-        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
+        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }
 
     public override void SetDefaults()
     {
-        ((Entity)((ModItem)this).Item).width = 20;
-        ((Entity)((ModItem)this).Item).height = 26;
-        ((ModItem)this).Item.useAnimation = 15;
-        ((ModItem)this).Item.useTime = 15;
-        ((ModItem)this).Item.maxStack = 1;
-        ((ModItem)this).Item.consumable = false;
-        ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Blue;
-        ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
+        Item.width = 20;
+        Item.height = 26;
+        Item.useAnimation = 15;
+        Item.useTime = 15;
+        Item.maxStack = 1;
+        Item.consumable = false;
+        Item.accessory = true;
+        Item.rare = ItemRarityID.Blue;
+        Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
@@ -35,11 +33,11 @@ public class GauntletOfAmmoReservation : ModItem
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.AmmoReservationPotion, 15).AddRecipeGroup(RecipeGroups.IronBars, 5)
+        CreateRecipe(1).AddIngredient(ItemID.AmmoReservationPotion, 15).AddRecipeGroup(RecipeGroups.IronBars, 5)
             .AddIngredient(ItemID.MusketBall, 100)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(ItemID.AmmoReservationPotion, 15).AddRecipeGroup(RecipeGroups.IronBars, 5)
+        CreateRecipe(1).AddIngredient(ItemID.AmmoReservationPotion, 15).AddRecipeGroup(RecipeGroups.IronBars, 5)
             .AddIngredient(ItemID.MusketBall, 100)
             .AddTile<CrimtaneBreweryTile>()
             .Register();

@@ -14,23 +14,23 @@ public class LivingBreweryTile : ModTile
     {
         //IL_0030: Unknown result type (might be due to invalid IL or missing references)
         //IL_007e: Unknown result type (might be due to invalid IL or missing references)
-        Main.tileFrameImportant[((ModBlockType)this).Type] = true;
-        Main.tileObsidianKill[((ModBlockType)this).Type] = true;
+        Main.tileFrameImportant[Type] = true;
+        Main.tileObsidianKill[Type] = true;
         TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
         TileObjectData.newTile.Origin = new Point16(0, 1);
         TileObjectData.newTile.LavaDeath = false;
         TileObjectData.newTile.DrawYOffset = 2;
-        TileObjectData.addTile((int)((ModBlockType)this).Type);
-        LocalizedText val = ((ModBlockType)this).CreateMapEntryName();
+        TileObjectData.addTile(Type);
+        LocalizedText val = CreateMapEntryName();
         // val.SetDefault("Living Brewery");
-        ((ModTile)this).AddMapEntry(new Color(200, 200, 200), val);
+        AddMapEntry(new Color(200, 200, 200), val);
     }
 
     public override void KillMultiTile(int i, int j, int frameX, int frameY)
     {
         //IL_0003: Unknown result type (might be due to invalid IL or missing references)
         //IL_0023: Expected O, but got Unknown
-        Item.NewItem((IEntitySource)new EntitySource_TileBreak(i, j, (string)null), i * 16, j * 16, 16, 48, ModContent.ItemType<LivingBrewery>(), 1, false, 0, false, false);
+        Item.NewItem(new EntitySource_TileBreak(i, j, null), i * 16, j * 16, 16, 48, ModContent.ItemType<LivingBrewery>(), 1, false, 0, false, false);
     }
 
     public override void MouseOver(int i, int j)

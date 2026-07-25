@@ -14,20 +14,20 @@ public class AquaticCharm : ModItem
         
         // ((ModItem)this).DisplayName.SetDefault("Aquatic Charm");
         // ((ModItem)this).Tooltip.SetDefault("Grants greater mobility in water.\n'Like flying, but in water.'");
-        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
+        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }
 
     public override void SetDefaults()
     {
-        ((Entity)((ModItem)this).Item).width = 20;
-        ((Entity)((ModItem)this).Item).height = 26;
-        ((ModItem)this).Item.useAnimation = 15;
-        ((ModItem)this).Item.useTime = 15;
-        ((ModItem)this).Item.maxStack = 1;
-        ((ModItem)this).Item.consumable = false;
-        ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.LightRed;
-        ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
+        Item.width = 20;
+        Item.height = 26;
+        Item.useAnimation = 15;
+        Item.useTime = 15;
+        Item.maxStack = 1;
+        Item.consumable = false;
+        Item.accessory = true;
+        Item.rare = ItemRarityID.LightRed;
+        Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
@@ -37,7 +37,7 @@ public class AquaticCharm : ModItem
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient<AnkletOfFlippers>(1).AddIngredient<AnkletOfGills>(1)
+        CreateRecipe(1).AddIngredient<AnkletOfFlippers>(1).AddIngredient<AnkletOfGills>(1)
             .AddIngredient<AnkletOfWaterWalking>(1)
             .AddIngredient(ItemID.Coral, 15)
             .AddIngredient(ItemID.WaterWalkingBoots, 1)

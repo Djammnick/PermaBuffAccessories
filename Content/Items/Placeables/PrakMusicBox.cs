@@ -30,6 +30,10 @@ public class PrakMusicBox : ModItem
 
     public override void AddRecipes()
     {
-        CreateRecipe(1).AddIngredient(ItemID.DirtBlock, 999).Register();
+        CreateRecipe(1)
+            .AddIngredient(ItemID.DirtBlock, 999)
+            .AddIngredient(ItemID.Wood, 999)
+            .AddIngredient(ItemID.StoneBlock, 999)
+            .Register();
     }
 }

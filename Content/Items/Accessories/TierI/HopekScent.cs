@@ -1,6 +1,7 @@
 using DjamUtility.Content.Tiles;
 using Terraria;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierI;
@@ -9,41 +10,39 @@ public class HopekScent : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Hopek's Scent");
-        // ((ModItem)this).Tooltip.SetDefault("Applies a putrid aroma as long as you wear it.\n'A faint smell of a long forgotten friend...'");
-        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
+        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }
 
     public override void SetDefaults()
     {
-        ((Entity)((ModItem)this).Item).width = 20;
-        ((Entity)((ModItem)this).Item).height = 26;
-        ((ModItem)this).Item.useAnimation = 15;
-        ((ModItem)this).Item.useTime = 15;
-        ((ModItem)this).Item.maxStack = 1;
-        ((ModItem)this).Item.consumable = false;
-        ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = 1;
-        ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
-        ((ModItem)this).Item.vanity = true;
+        Item.width = 20;
+        Item.height = 26;
+        Item.useAnimation = 15;
+        Item.useTime = 15;
+        Item.maxStack = 1;
+        Item.consumable = false;
+        Item.accessory = true;
+        Item.rare = ItemRarityID.Blue;
+        Item.value = Item.buyPrice(0, 0, 0, 0);
+        Item.vanity = true;
     }
 
     public override void UpdateVanity(Player player)
     {
-        player.AddBuff(120, 10, true, false);
+        player.AddBuff(BuffID.Stinky, 10, true, false);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(120, 10, true, false);
+        player.AddBuff(BuffID.Stinky, 10, true, false);
     }
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2353, 5).AddIngredient(894, 1)
+        CreateRecipe(1).AddIngredient(ItemID.StinkPotion, 5).AddIngredient(ItemID.CactusHelmet, 1)
             .AddTile<DemoniteBreweryTile>()
             .Register();
-        ((ModItem)this).CreateRecipe(1).AddIngredient(2353, 5).AddIngredient(894, 1)
+        CreateRecipe(1).AddIngredient(ItemID.StinkPotion, 5).AddIngredient(ItemID.CactusHelmet, 1)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

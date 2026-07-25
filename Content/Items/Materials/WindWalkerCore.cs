@@ -19,7 +19,7 @@ namespace DjamUtility.Content.Items.Materials
             Item.height = 16;
             Item.maxStack = 9999;
             Item.consumable = false;
-            Item.rare = 2;
+            Item.rare = ItemRarityID.Green;
             Item.value = Item.buyPrice(0, 0, 0, 0);
         }
 

@@ -14,41 +14,31 @@ public class ShardOfUtility : ModItem
 {
     public override void SetStaticDefaults()
     {
-        //IL_002f: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0039: Expected O, but got Unknown
-        // ((ModItem)this).DisplayName.SetDefault("Shard of Utility");
-        // ((ModItem)this).Tooltip.SetDefault("Your possibilities are countless.\n'The second one of the legendary shards'");
-        Main.RegisterItemAnimation(((ModItem)this).Item.type, (DrawAnimation)new DrawAnimationVertical(5, 18, false));
-        ItemID.Sets.AnimatesAsSoul[((ModItem)this).Item.type] = true;
-        ItemID.Sets.ItemIconPulse[((ModItem)this).Item.type] = false;
-        ItemID.Sets.ItemNoGravity[((ModItem)this).Item.type] = true;
-        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[((ModItem)this).Type] = 1;
+        Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5, 18, false));
+        ItemID.Sets.AnimatesAsSoul[Item.type] = true;
+        ItemID.Sets.ItemIconPulse[Item.type] = false;
+        ItemID.Sets.ItemNoGravity[Item.type] = true;
+        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }
 
     public override void SetDefaults()
     {
-        ((Entity)((ModItem)this).Item).width = 20;
-        ((Entity)((ModItem)this).Item).height = 26;
-        ((ModItem)this).Item.useAnimation = 15;
-        ((ModItem)this).Item.useTime = 15;
-        ((ModItem)this).Item.maxStack = 1;
-        ((ModItem)this).Item.consumable = false;
-        ((ModItem)this).Item.accessory = true;
-        ((ModItem)this).Item.rare = ItemRarityID.Lime;
-        ((ModItem)this).Item.value = Item.buyPrice(0, 0, 0, 0);
+        Item.width = 20;
+        Item.height = 26;
+        Item.useAnimation = 15;
+        Item.useTime = 15;
+        Item.maxStack = 1;
+        Item.consumable = false;
+        Item.accessory = true;
+        Item.rare = ItemRarityID.Lime;
+        Item.value = Item.buyPrice(0, 0, 0, 0);
     }
 
     public override void PostUpdate()
     {
-        //IL_0006: Unknown result type (might be due to invalid IL or missing references)
-        //IL_000b: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0010: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0013: Unknown result type (might be due to invalid IL or missing references)
-        //IL_001d: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0027: Unknown result type (might be due to invalid IL or missing references)
-        Vector2 center = ((Entity)((ModItem)this).Item).Center;
+        Vector2 center = Item.Center;
         Color whiteSmoke = Color.WhiteSmoke;
-        Lighting.AddLight(center, ((Color)(whiteSmoke)).ToVector3() * 0.55f * Main.essScale);
+        Lighting.AddLight(center, ((Color)whiteSmoke).ToVector3() * 0.55f * Main.essScale);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
@@ -58,7 +48,7 @@ public class ShardOfUtility : ModItem
 
     public override void AddRecipes()
     {
-        ((ModItem)this).CreateRecipe(1).AddIngredient<DjamsGlasses>(1).AddIngredient<FourLeafClover>(1)
+        CreateRecipe(1).AddIngredient<DjamsGlasses>(1).AddIngredient<FourLeafClover>(1)
             .AddIngredient<HandheldDrill>(1)
             .AddIngredient<FishermansScanner>(1)
             .AddIngredient(ItemID.LifeFruit, 5)

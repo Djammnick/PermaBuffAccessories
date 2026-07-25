@@ -38,11 +38,11 @@ public class RecipeGroups : ModSystem
         //IL_00f0: Expected O, but got Unknown
         //IL_0122: Unknown result type (might be due to invalid IL or missing references)
         //IL_012c: Expected O, but got Unknown
-        EvilComponent = new RecipeGroup((Func<string>)(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(69)), new int[2] { 69, 1330 });
-        GoldBars = new RecipeGroup((Func<string>)(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(19)), new int[2] { 19, 706 });
-        SilverBars = new RecipeGroup((Func<string>)(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(21)), new int[2] { 21, 705 });
-        IronBars = new RecipeGroup((Func<string>)(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(22)), new int[2] { 22, 704 });
-        DemoniteBars = new RecipeGroup((Func<string>)(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(57)), new int[2] { 57, 1257 });
+        EvilComponent = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(69), new int[2] { 69, 1330 });
+        GoldBars = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(19), new int[2] { 19, 706 });
+        SilverBars = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(21), new int[2] { 21, 705 });
+        IronBars = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(22), new int[2] { 22, 704 });
+        DemoniteBars = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " " + Lang.GetItemNameValue(57), new int[2] { 57, 1257 });
         RecipeGroup.RegisterGroup("DjamUtility:WormTooth", EvilComponent);
         RecipeGroup.RegisterGroup("DjamUtility:IronBars", IronBars);
         RecipeGroup.RegisterGroup("DjamUtility:DemoniteBars", DemoniteBars);
