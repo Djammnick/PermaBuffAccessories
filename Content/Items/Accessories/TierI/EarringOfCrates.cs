@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -36,21 +37,25 @@ public class EarringOfCrates : ModItem
         CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrate, 3)
             .AddIngredient(ItemID.IronCrate, 3)
             .AddIngredient(ItemID.GoldenCrate, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrate, 3)
             .AddIngredient(ItemID.IronCrate, 3)
             .AddIngredient(ItemID.GoldenCrate, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrateHard, 3)
             .AddIngredient(ItemID.IronCrateHard, 3)
             .AddIngredient(ItemID.GoldenCrateHard, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.CratePotion, 15).AddIngredient(ItemID.WoodenCrateHard, 3)
             .AddIngredient(ItemID.IronCrateHard, 3)
             .AddIngredient(ItemID.GoldenCrateHard, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -37,12 +38,14 @@ public class EarringOfFishing : ModItem
             .AddIngredient(ItemID.AtlanticCod, 3)
             .AddIngredient(ItemID.NeonTetra, 3)
             .AddIngredient(ItemID.Shrimp, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.FishingPotion, 15).AddIngredient(ItemID.Bass, 3)
             .AddIngredient(ItemID.AtlanticCod, 3)
             .AddIngredient(ItemID.NeonTetra, 3)
             .AddIngredient(ItemID.Shrimp, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

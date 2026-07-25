@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
@@ -37,10 +38,12 @@ public class HuntersCloak : ModItem
     public override void AddRecipes()
     {
         CreateRecipe(1).AddIngredient(ItemID.HunterPotion, 5).AddIngredient(ItemID.Silk, 15)
-            .AddTile<DemoniteBreweryTile>()
+            .AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
+			.AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.HunterPotion, 5).AddIngredient(ItemID.Silk, 15)
-            .AddTile<CrimtaneBreweryTile>()
+            .AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
+			.AddTile<CrimtaneBreweryTile>()
             .Register();
     }
 }

@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -38,12 +39,14 @@ public class AmuletOfGreaterLuck : ModItem
             .AddIngredient(ItemID.BlackPearl, 5)
             .AddIngredient(ItemID.PinkPearl, 5)
             .AddIngredient(ItemID.Chain, 1)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.LuckPotionGreater, 15).AddIngredient(ItemID.WhitePearl, 5)
             .AddIngredient(ItemID.BlackPearl, 5)
             .AddIngredient(ItemID.PinkPearl, 5)
             .AddIngredient(ItemID.Chain, 1)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -35,10 +36,12 @@ public class NecklaceOfEndurance : ModItem
     public override void AddRecipes()
     {
         CreateRecipe(1).AddIngredient(ItemID.EndurancePotion, 15).AddRecipeGroup(RecipeGroups.SilverBars, 5)
-            .AddTile<DemoniteBreweryTile>()
+            .AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
+			.AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.EndurancePotion, 15).AddRecipeGroup(RecipeGroups.SilverBars, 5)
-            .AddTile<CrimtaneBreweryTile>()
+            .AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
+			.AddTile<CrimtaneBreweryTile>()
             .Register();
     }
 }

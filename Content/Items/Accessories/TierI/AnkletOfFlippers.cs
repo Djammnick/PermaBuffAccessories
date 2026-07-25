@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -35,10 +36,12 @@ public class AnkletOfFlippers : ModItem
     {
         CreateRecipe(1).AddIngredient(ItemID.FlipperPotion, 15).AddIngredient(ItemID.Flipper, 1)
             .AddIngredient(ItemID.Chain, 1)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.FlipperPotion, 15).AddIngredient(ItemID.Flipper, 1)
             .AddIngredient(ItemID.Chain, 1)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

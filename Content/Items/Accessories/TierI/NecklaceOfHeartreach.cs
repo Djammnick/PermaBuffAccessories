@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -36,10 +37,12 @@ public class NecklaceOfHeartreach : ModItem
     {
         CreateRecipe(1).AddIngredient(ItemID.HeartreachPotion, 15).AddIngredient(ItemID.LifeCrystal, 1)
             .AddRecipeGroup(RecipeGroups.IronBars, 5)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.HeartreachPotion, 15).AddIngredient(ItemID.LifeCrystal, 1)
             .AddRecipeGroup(RecipeGroups.IronBars, 5)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

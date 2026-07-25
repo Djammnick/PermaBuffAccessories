@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -36,10 +37,12 @@ public class BandOfMining : ModItem
     {
         CreateRecipe(1).AddIngredient(ItemID.MiningPotion, 15).AddIngredient(ItemID.MiningHelmet, 1)
             .AddIngredient(ItemID.StoneBlock, 100)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.MiningPotion, 15).AddIngredient(ItemID.MiningHelmet, 1)
             .AddIngredient(ItemID.StoneBlock, 100)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

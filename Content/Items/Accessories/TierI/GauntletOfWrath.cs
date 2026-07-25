@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -37,10 +38,12 @@ public class GauntletOfWrath : ModItem
     {
         CreateRecipe(1).AddIngredient(ItemID.WrathPotion, 15).AddRecipeGroup(RecipeGroups.IronBars, 5)
             .AddRecipeGroup(RecipeGroups.DemoniteBars, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.WrathPotion, 15).AddRecipeGroup(RecipeGroups.IronBars, 5)
             .AddRecipeGroup(RecipeGroups.DemoniteBars, 3)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }

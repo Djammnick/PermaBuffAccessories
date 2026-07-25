@@ -1,4 +1,5 @@
 using DjamUtility.Content.Tiles;
+using DjamUtility.Content.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
@@ -40,6 +41,7 @@ public class PendantOfCalming : ModItem
             .AddIngredient(ItemID.Moonglow, 1)
             .AddIngredient(ItemID.Deathweed, 1)
             .AddIngredient(ItemID.Fireblossom, 1)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<DemoniteBreweryTile>()
             .Register();
         CreateRecipe(1).AddIngredient(ItemID.CalmingPotion, 15).AddIngredient(ItemID.Daybloom, 1)
@@ -48,6 +50,7 @@ public class PendantOfCalming : ModItem
             .AddIngredient(ItemID.Moonglow, 1)
             .AddIngredient(ItemID.Deathweed, 1)
             .AddIngredient(ItemID.Fireblossom, 1)
+			.AddIngredient(ModContent.ItemType<WindWalkerCore>(), 5)
             .AddTile<CrimtaneBreweryTile>()
             .Register();
     }
