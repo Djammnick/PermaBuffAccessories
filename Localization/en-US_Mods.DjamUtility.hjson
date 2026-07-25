@@ -112,13 +112,13 @@ Items: {
 		DisplayName: Crimtane Brewery
 	}
 
-	SingularityOfPieselopadaka: {
+	Singularity: {
 		Tooltip:
 			'''
 			The core of the world.
-			Grants all blessings at the same time.
+			Everything pulls right back to this.
 			'''
-		DisplayName: Singularity Of Pieselopadaka
+		DisplayName: Singularity
 	}
 
 	ShardOfVitality: {
@@ -309,9 +309,9 @@ Items: {
 		DisplayName: Hunters Cloak
 	}
 
-	HopekScent: {
+	CactusCandle: {
 		Tooltip: Grants the Stink debuff.
-		DisplayName: Hopek Scent
+		DisplayName: Cactus Candle
 	}
 
 	GogglesOfBuilding: {

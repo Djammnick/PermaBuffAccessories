@@ -34,7 +34,7 @@ public class MuskyPerfumes : ModItem
 
     public override void AddRecipes()
     {
-        CreateRecipe(1).AddIngredient<HopekScent>(1).AddIngredient<RingOfLove>(1)
+        CreateRecipe(1).AddIngredient<CactusCandle>(1).AddIngredient<RingOfLove>(1)
             .AddIngredient(ItemID.JungleSpores, 15)
             .AddTile(TileID.AlchemyTable)
             .Register();
