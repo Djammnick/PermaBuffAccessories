@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Buffs;
 
-public class BlessingOfPieselopadaka : ModBuff
+public class FlightlessPermabuff : ModBuff
 {
     public override void SetStaticDefaults()
     {
@@ -13,16 +13,6 @@ public class BlessingOfPieselopadaka : ModBuff
 
     public override void Update(Player player, ref int buffIndex)
     {
-        //IL_0132: Unknown result type (might be due to invalid IL or missing references)
-        //IL_013c: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0141: Unknown result type (might be due to invalid IL or missing references)
-        //IL_016b: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0175: Unknown result type (might be due to invalid IL or missing references)
-        //IL_017a: Unknown result type (might be due to invalid IL or missing references)
-        //IL_01aa: Unknown result type (might be due to invalid IL or missing references)
-        //IL_01b4: Unknown result type (might be due to invalid IL or missing references)
-        //IL_01b9: Unknown result type (might be due to invalid IL or missing references)
-        //IL_02e0: Unknown result type (might be due to invalid IL or missing references)
         player.waterWalk = true;
         player.gills = true;
         player.accFlipper = true;
@@ -37,7 +27,7 @@ public class BlessingOfPieselopadaka : ModBuff
         player.buffImmune[124] = true;
         player.runAcceleration += 0.25f;
         player.gravControl = true;
-        player.slowFall = true;
+        //player.slowFall = true;
         player.buffImmune[3] = true;
         player.buffImmune[18] = true;
         player.buffImmune[8] = true;

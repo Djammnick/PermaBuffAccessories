@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 
 namespace DjamUtility.Content.Items.Accessories.TierIII;
 
-public class Singularity : ModItem
+public class FlightlessSingularity : ModItem
 {
     public override void SetStaticDefaults()
     {
@@ -35,7 +35,7 @@ public class Singularity : ModItem
     public override void RightClick(Player player)
     {
         IEntitySource source_OpenItem = player.GetSource_OpenItem(Type, null);
-        player.QuickSpawnItem(source_OpenItem, ModContent.ItemType<Singularity>(), 1);
+        player.QuickSpawnItem(source_OpenItem, ModContent.ItemType<FlightlessSingularity>(), 1);
     }
 
     public override void PostUpdate()
@@ -47,17 +47,6 @@ public class Singularity : ModItem
 
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
-        player.AddBuff(ModContent.BuffType<Permabuff>(), 10, true, false);
-    }
-
-    public override void AddRecipes()
-    {
-        CreateRecipe(1)
-            .AddIngredient<ShardOfDestruction>(1)
-            .AddIngredient<ShardOfUtility>(1)
-            .AddIngredient<ShardOfVitality>(1)
-            .AddIngredient(ItemID.LunarBar, 5)
-            .AddTile(TileID.LunarCraftingStation)
-            .Register();
+        player.AddBuff(ModContent.BuffType<FlightlessPermabuff>(), 10, true, false);
     }
 }

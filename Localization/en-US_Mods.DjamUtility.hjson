@@ -80,11 +80,6 @@ Buffs: {
 		Description: You are the catalyst of creation.
 	}
 
-	BlessingOfPieselopadaka: {
-		DisplayName: Blessing Of Pieselopadaka
-		Description: The world is at your command.
-	}
-
 	BlessingOfDestruction: {
 		DisplayName: Blessing Of Destruction
 		Description: Nothing will stand in your way.
@@ -96,13 +91,13 @@ Buffs: {
 	}
 
 	FlightlessPermabuff: {
-		DisplayName: Flightless Permabuff
-		Description: Mods.DjamUtility.Buffs.FlightlessPermabuff.Description
+		DisplayName: Permabuff
+		Description: The world is at your command.
 	}
 
 	Permabuff: {
 		DisplayName: Permabuff
-		Description: Mods.DjamUtility.Buffs.Permabuff.Description
+		Description: The world is at your command.
 	}
 }
 
@@ -129,6 +124,15 @@ Items: {
 			Everything pulls right back to this.
 			'''
 		DisplayName: Singularity
+	}
+
+	FlightlessSingularity: {
+		Tooltip:
+			'''
+			The core of the world.
+			Everything pulls right back to this.
+			'''
+		DisplayName: Flightless Singularity
 	}
 
 	ShardOfVitality: {
