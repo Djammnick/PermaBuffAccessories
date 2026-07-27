@@ -94,6 +94,16 @@ Buffs: {
 		DisplayName: Berserk
 		Description: Your blood boils in fury.
 	}
+
+	FlightlessPermabuff: {
+		DisplayName: Flightless Permabuff
+		Description: Mods.DjamUtility.Buffs.FlightlessPermabuff.Description
+	}
+
+	Permabuff: {
+		DisplayName: Permabuff
+		Description: Mods.DjamUtility.Buffs.Permabuff.Description
+	}
 }
 
 Items: {
@@ -350,8 +360,13 @@ Items: {
 	}
 
 	RulesCard: {
-		Tooltip: ""
-		DisplayName: Rules Card
+		Tooltip:
+			'''
+			Welcome to Permabuff Accessories!
+			To get started, collect 15 of your favourite potion, defeat a powerful enemy and collect some related materials.
+			Recipe Browser is recommended, as on the later stages the crafting may get more complicated.
+			'''
+		DisplayName: Brewer's Notes
 	}
 
 	MysteriousTech: {

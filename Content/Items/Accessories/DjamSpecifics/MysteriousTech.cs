@@ -11,8 +11,6 @@ public class MysteriousTech : ModItem
 {
     public override void SetStaticDefaults()
     {
-        // ((ModItem)this).DisplayName.SetDefault("Djammnick's Control Pad: Inactive");
-        // ((ModItem)this).Tooltip.SetDefault("'What does it even do...?'");
         CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
     }
 
