@@ -12,8 +12,6 @@ public class DemoniteBreweryTile : ModTile
 {
     public override void SetStaticDefaults()
     {
-        //IL_0030: Unknown result type (might be due to invalid IL or missing references)
-        //IL_007e: Unknown result type (might be due to invalid IL or missing references)
         Main.tileFrameImportant[Type] = true;
         Main.tileObsidianKill[Type] = true;
         TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
@@ -36,13 +34,6 @@ public class DemoniteBreweryTile : ModTile
 			frame = ++frame  %8;
 		}
 	}
-	
-    public override void KillMultiTile(int i, int j, int frameX, int frameY)
-    {
-        //IL_0003: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0023: Expected O, but got Unknown
-        Item.NewItem(new EntitySource_TileBreak(i, j, null), i * 16, j * 16, 16, 54, ModContent.ItemType<DemoniteBrewery>(), 1, false, 0, false, false);
-    }
 
     public override void MouseOver(int i, int j)
     {
