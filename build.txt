@@ -1,2 +1,3 @@
 displayName = Permabuff Accessories
 version = 1.0
+author = Djammnick

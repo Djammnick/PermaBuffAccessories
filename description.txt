@@ -1,0 +1,13 @@
+Permabuff Accessories is a mod that adds several items that enable permanent version of many potion buffs.
+
+List of Contents:
+
+- Accessories applying permanent buffs in 4 tiers to ultimately combine many into one.
+- A new enemy which guards a key ingredient for binding the effects.
+- Two new dedicated crafting stations for crafting the aforementioned accessories.
+
+The accessories come in 4 tiers:
+-> Tier I is available after the Eye of Cthulhu, using a drop from an elusive enemy and the Demonite or Crimtane Brewery.
+-> Tier II is available as soon as you obtain Alchemy Station.
+-> Tier III is available as soon as you obtain the Living Brewery, which drops from a powerful plant menace.
+-> Tier IV - the final accessory - is available at the end of your journey.
